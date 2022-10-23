@@ -1,7 +1,6 @@
 1 
 
 ![01](https://user-images.githubusercontent.com/105611781/197417057-80b5120d-5fbd-4410-8dca-47a43a1895dd.PNG)
-
 chdir
 
 2
