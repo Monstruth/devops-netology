@@ -31,6 +31,7 @@ chdir
 6
 
 Системный вызов uname()
+
 Part of the utsname information is also accessible via
  /proc/sys/kernel/{ostype, hostname, osrelease, version, domainname}.
 
