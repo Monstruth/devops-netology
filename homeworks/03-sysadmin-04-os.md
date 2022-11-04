@@ -13,7 +13,7 @@
 
 EnvironmentFile=-/etc/default/cron
 
-ExecStart=/usr/sbin/cron -f -P $EXTRA_OPTS
+ExecStart=/usr/sbin/cron -f $EXTRA_OPTS
 
 2
 
