@@ -39,3 +39,4 @@ node_memory_MemTotal_bytes - загрузка памяти
 
 ![004](https://user-images.githubusercontent.com/105611781/200083686-7921644f-18bc-4c51-be5c-d321d89ac850.PNG)
 
+5...
