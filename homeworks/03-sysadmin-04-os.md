@@ -6,6 +6,12 @@
 
 ![103](https://user-images.githubusercontent.com/105611781/199497009-b1108884-4f6a-42bb-9eaf-7a8f460f690e.PNG)
 
+на примере юнита cron
+![106](https://user-images.githubusercontent.com/105611781/200078614-3edf1090-5502-495e-bc3d-09330d775687.PNG)
+видим как файле /etc/default/cron прописываются сами значения переменных. Далее в unit-файле в разделе [Service] указывается, откуда значения параметров забирать и указывается сам параметр через $:
+EnvironmentFile=-/etc/default/cron
+ExecStart=/usr/sbin/cron -f -P $EXTRA_OPTS
+
 2
 
 ![104](https://user-images.githubusercontent.com/105611781/199497039-226e1d93-705a-43c1-b024-c0d9c24d6212.PNG)
