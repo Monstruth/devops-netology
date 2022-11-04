@@ -21,6 +21,16 @@ ExecStart=/usr/sbin/cron -f -P $EXTRA_OPTS
 
 ![105](https://user-images.githubusercontent.com/105611781/199497085-c258b97e-de4a-4afd-9837-d1b28586a7ce.PNG)
 
+node_load 1 - средняя загрузка за минуту (Load averages)
+
+node_filesystem_avail_bytes – использование файловой системы
+
+node_network_receive_bytes_total — сетевой трафик
+
+node_cpu_seconds_total - загрузка процессора
+
+node_memory_MemTotal_bytes - загрузка памяти
+
 3
 
 ![02](https://user-images.githubusercontent.com/105611781/199497428-9112eec1-a3f9-4567-8af2-9154a17d04f0.PNG)
