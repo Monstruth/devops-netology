@@ -2,6 +2,8 @@
 
 ![00001](https://user-images.githubusercontent.com/105611781/200198735-d7fac8d9-3814-4c66-9ec3-574e0a87d246.png)
 
+upd. Первый скриншот переделал на другой машине
+
 
 ![102](https://user-images.githubusercontent.com/105611781/199496971-b2baa443-93a1-421a-a169-811c04193c32.PNG)
 
@@ -11,10 +13,6 @@
 ![106](https://user-images.githubusercontent.com/105611781/200078614-3edf1090-5502-495e-bc3d-09330d775687.PNG)
 видим как
 в файле /etc/default/cron прописываются сами значения переменных. Далее в unit-файле в разделе [Service] через EnvironmentFile указывается, откуда значения параметров забирать и после ExecStart указывается сам параметр через $:
-
-EnvironmentFile=-/etc/default/cron
-
-ExecStart=/usr/sbin/cron -f $EXTRA_OPTS
 
 2
 
