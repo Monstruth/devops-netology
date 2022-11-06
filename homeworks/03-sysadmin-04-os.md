@@ -1,6 +1,7 @@
 1
 
 upd. Первый скриншот переделал на другой машине
+
 ![00001](https://user-images.githubusercontent.com/105611781/200198735-d7fac8d9-3814-4c66-9ec3-574e0a87d246.png)
 
 ![102](https://user-images.githubusercontent.com/105611781/199496971-b2baa443-93a1-421a-a169-811c04193c32.PNG)
