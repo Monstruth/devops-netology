@@ -58,4 +58,20 @@ $? - это код возврата из процесса последнего �
 
 16
 
+![16](https://user-images.githubusercontent.com/105611781/201498330-05502033-6a07-48b2-81bc-fbe95fce459c.PNG)
 
+17
+
+![17](https://user-images.githubusercontent.com/105611781/201498341-cf6fdbb5-f58e-4ab6-9175-133efafda22b.PNG)
+
+18
+
+![18](https://user-images.githubusercontent.com/105611781/201498347-a0eb7319-641b-4de7-bd1f-81a54f386845.PNG)
+
+19
+
+![19](https://user-images.githubusercontent.com/105611781/201498360-32532c19-b355-4a2f-90f8-a3e1f0f77dc5.PNG)
+
+20
+
+![20](https://user-images.githubusercontent.com/105611781/201498371-9c6f1da8-6c8c-4412-8185-9760b857021e.PNG)
