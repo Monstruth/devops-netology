@@ -1,6 +1,7 @@
 1
 
->  monztro@monztro-laptop:~/Рабочий стол$ telnet stackoverflow.com 80
+```
+monztro@monztro-laptop:~/Рабочий стол$ telnet stackoverflow.com 80
 Trying 151.101.193.69...
 Connected to stackoverflow.com.
 Escape character is '^]'.
@@ -80,3 +81,35 @@ X-DNS-Prefetch-Control: off
 	<script>document.getElementById('jslocation').innerHTML = window.location.href;</script>
 </body>
 </html>Connection closed by foreign host.
+```
+ошибка 403 сервер отказал в доступе по моему IP , видимо доступ из России запрещён или ещё какая то причина, например сделана защита от ddos атак
+
+Поэтому пробуем подключится к яндексу:
+```
+telnet yandex.ru 80
+Trying 5.255.255.5...
+Connected to yandex.ru.
+Escape character is '^]'.
+GET /questions HTTP/1.0
+HOST: yandex.ru
+
+HTTP/1.1 302 Moved temporarily
+Content-Length: 0
+Location: https://yandex.ru/questions
+NEL: {"report_to": "network-errors", "max_age": 100, "success_fraction": 0.001, "failure_fraction": 0.1}
+Report-To: { "group": "network-errors", "max_age": 100, "endpoints": [{"url": "https://dr.yandex.net/nel", "priority": 1}, {"url": "https://dr2.yandex.net/nel", "priority": 2}]}
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+set-cookie: is_gdpr=0; Path=/; Domain=.yandex.ru; Expires=Thu, 21 Nov 2024 09:36:59 GMT
+set-cookie: is_gdpr_b=CMyzPRDslgE=; Path=/; Domain=.yandex.ru; Expires=Thu, 21 Nov 2024 09:36:59 GMT
+set-cookie: _yasc=fRORKSrlS8oDVlmiJdVEGJfw07evg1935NCMxo2VAMWk66qYKwKbkITPnQU36A==; domain=.yandex.ru; path=/; expires=Fri, 19-Nov-2032 09:36:59 GMT; secure
+
+Connection closed by foreign host.
+```
+302 Данный код статуса сообщает клиенту, что ресурс временно доступен по другому URI, указанному в строке заголовка Location, заголовка ответа сервера. Как я понял этот код здесь нам говорит что ресурс работает по протоколу https
+
+2
+
+![02](https://user-images.githubusercontent.com/105611781/203296136-0a69ca8b-fe3b-4c3b-8717-6bdbaf662d53.png)
+
+
