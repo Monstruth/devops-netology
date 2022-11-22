@@ -131,5 +131,71 @@ dig @resolver4.opendns.com myip.opendns.com +short
 ```
 4
 
+```
+whois 31.135.187.xxx
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
 
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to '31.135.184.0 - 31.135.191.255'
+
+% Abuse contact for '31.135.184.0 - 31.135.191.255' is 'romannix@mail.ru'
+
+inetnum:        31.135.184.0 - 31.135.191.255
+netname:        TENETATELEKOM
+country:        RU
+org:            ORG-TENE1-RIPE
+admin-c:        AI2981-RIPE
+tech-c:         AI2981-RIPE
+status:         ASSIGNED PI
+mnt-by:         RIPE-NCC-END-MNT
+mnt-by:         TENETATELEKOM-MNT
+mnt-routes:     TENETATELEKOM-MNT
+mnt-domains:    TENETATELEKOM-MNT
+created:        2012-08-09T10:02:43Z
+last-modified:  2016-04-14T09:08:18Z
+source:         RIPE # Filtered
+sponsoring-org: ORG-Vs35-RIPE
+
+organisation:   ORG-TENE1-RIPE
+org-name:       Teneta Telekom Ltd.
+org-type:       OTHER
+country:        RU
+address:        Kaluzhskaya oblast, g.Maloyaroslavets, ul. Moskovskaya, d.16. ofis 200
+abuse-c:        AR20399-RIPE
+mnt-ref:        TENETATELEKOM-MNT
+mnt-by:         TENETATELEKOM-MNT
+created:        2012-08-06T13:13:37Z
+last-modified:  2022-10-31T14:41:06Z
+source:         RIPE # Filtered
+
+person:         Grigorov Roman
+address:        16 Moskovskaya st., Maloyaroslavec, Kaluga region, Russia
+phone:          +79206146368
+nic-hdl:        AI2981-RIPE
+mnt-by:         TENETATELEKOM-MNT
+created:        2012-08-06T13:12:09Z
+last-modified:  2016-09-01T07:41:33Z
+source:         RIPE # Filtered
+
+% Information related to '31.135.184.0/22AS59595'
+
+route:          31.135.184.0/22
+origin:         AS59595
+mnt-by:         TENETATELEKOM-MNT
+created:        2021-03-03T17:21:45Z
+last-modified:  2021-03-03T17:21:45Z
+source:         RIPE
+
+% This query was served by the RIPE Database Query Service version 1.104 (HEREFORD)
+```
+
+Провайдер - Тенетателеком. AS59595.
+
+5
 
