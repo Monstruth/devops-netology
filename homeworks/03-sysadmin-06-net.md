@@ -263,4 +263,67 @@ HOST: monztro-laptop              Loss%   Snt   Last   Avg  Best  Wrst StDev
  
  7
  
- 
+ ```
+ $ dig +short NS dns.google
+ns4.zdns.google.
+ns3.zdns.google.
+ns1.zdns.google.
+ns2.zdns.google.
+```
+
+```
+$ dig +short A dns.google
+8.8.4.4
+8.8.8.8
+```
+
+8
+
+```
+$ dig -x 8.8.8.8
+
+; <<>> DiG 9.18.1-1ubuntu1.2-Ubuntu <<>> -x 8.8.8.8
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 41573
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;8.8.8.8.in-addr.arpa.		IN	PTR
+
+;; ANSWER SECTION:
+8.8.8.8.in-addr.arpa.	9780	IN	PTR	dns.google.
+
+;; Query time: 7 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Tue Nov 22 15:56:16 MSK 2022
+;; MSG SIZE  rcvd: 73
+```
+8.8.8.8.in-addr.arpa.	9780	IN	PTR	dns.google.
+
+```
+$ dig -x 8.8.4.4
+
+; <<>> DiG 9.18.1-1ubuntu1.2-Ubuntu <<>> -x 8.8.4.4
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 23350
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;4.4.8.8.in-addr.arpa.		IN	PTR
+
+;; ANSWER SECTION:
+4.4.8.8.in-addr.arpa.	9622	IN	PTR	dns.google.
+
+;; Query time: 7 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Tue Nov 22 15:58:43 MSK 2022
+;; MSG SIZE  rcvd: 73
+```
+
+4.4.8.8.in-addr.arpa.	9622	IN	PTR	dns.google.
