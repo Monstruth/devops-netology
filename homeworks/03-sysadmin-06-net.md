@@ -125,5 +125,10 @@ Load: 2.23 s - время загрузки страницы
 
 3
 
+```dig @resolver4.opendns.com myip.opendns.com +short
+31.135.187.xxx
+```
+4
+
 
 
