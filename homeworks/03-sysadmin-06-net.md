@@ -112,5 +112,10 @@ Connection closed by foreign host.
 
 ![02](https://user-images.githubusercontent.com/105611781/203297325-4c27a232-8082-4b09-817d-a372eeb7b14f.png)
 
+307 Redirect — Временное перенаправление
+Запрошенный ресурс временно доступен по URI, указанному в строке заголовка Location, заголовка ответа сервера. Опять нас перенаправляют на HTTPS
+
+![03](https://user-images.githubusercontent.com/105611781/203301379-f4ced7ce-7114-4025-8f2b-2d4a1b2f1695.png)
+
 
 
