@@ -1,6 +1,6 @@
 1
 
-`monztro@monztro-laptop:~/Рабочий стол$ telnet stackoverflow.com 80
+>  monztro@monztro-laptop:~/Рабочий стол$ telnet stackoverflow.com 80
 Trying 151.101.193.69...
 Connected to stackoverflow.com.
 Escape character is '^]'.
@@ -80,4 +80,3 @@ X-DNS-Prefetch-Control: off
 	<script>document.getElementById('jslocation').innerHTML = window.location.href;</script>
 </body>
 </html>Connection closed by foreign host.
-`
