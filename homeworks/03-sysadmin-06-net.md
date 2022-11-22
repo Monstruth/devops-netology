@@ -110,6 +110,7 @@ Connection closed by foreign host.
 
 2
 
-![02](https://user-images.githubusercontent.com/105611781/203296136-0a69ca8b-fe3b-4c3b-8717-6bdbaf662d53.png)
+![02](https://user-images.githubusercontent.com/105611781/203297325-4c27a232-8082-4b09-817d-a372eeb7b14f.png)
+
 
 
