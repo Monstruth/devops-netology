@@ -117,5 +117,13 @@ Connection closed by foreign host.
 
 ![03](https://user-images.githubusercontent.com/105611781/203301379-f4ced7ce-7114-4025-8f2b-2d4a1b2f1695.png)
 
+Load: 2.23 s - время загрузки страницы
+
+![04](https://user-images.githubusercontent.com/105611781/203302845-38b9993c-6998-4979-9876-f37e8b0d87fb.png)
+
+самый длинный запрос аналитика analytics.js - 680 миллисекунд
+
+3
+
 
 
