@@ -61,6 +61,9 @@ Link Layer Discovery Protocol (LLDP) — протокол канального �
 
 3
 
+Технология называется VLAN (Virtual LAN).
+Пакет в Ubuntu Linux - vlan
+
 ```
 vagrant@vagrant:~$ sudo ip link add link eth0 name eth0.10 type vlan id 10
 vagrant@vagrant:~$ sudo ip -d link show eth0.10
