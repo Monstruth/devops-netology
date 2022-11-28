@@ -61,3 +61,22 @@ Link Layer Discovery Protocol (LLDP) — протокол канального �
 
 3
 
+```
+vagrant@vagrant:~$ sudo ip link add link eth0 name eth0.10 type vlan id 10
+vagrant@vagrant:~$ sudo ip -d link show eth0.10
+3: eth0.10@eth0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 08:00:27:a2:6b:fd brd ff:ff:ff:ff:ff:ff promiscuity 0 minmtu 0 maxmtu 65535
+    vlan protocol 802.1Q id 10 <REORDER_HDR> addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+vagrant@vagrant:~$ sudo ip addr add 192.168.1.200/24 brd 192.168.1.255 dev eth0.10
+vagrant@vagrant:~$ sudo ip link set dev eth0.10 up
+vagrant@vagrant:~$ ip -c l
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether 08:00:27:a2:6b:fd brd ff:ff:ff:ff:ff:ff
+3: eth0.10@eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether 08:00:27:a2:6b:fd brd ff:ff:ff:ff:ff:ff
+vagrant@vagrant:~$
+```
+
+
