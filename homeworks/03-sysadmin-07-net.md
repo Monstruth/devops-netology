@@ -160,5 +160,4 @@ vagrant@vagrant:~$ sudo ip link
     link/ether 08:00:27:a2:9d:fc brd ff:ff:ff:ff:ff:ff
 vagrant@vagrant:~$
 ```
-5
-
+5...
