@@ -7,7 +7,7 @@ show bgp x.x.x.x/32
 ```
 
 ```
-route-views>show ip route 31.135.187.229
+route-views>show ip route 31.135.187.xxx
 Routing entry for 31.135.184.0/22
   Known via "bgp 6447", distance 20, metric 0
   Tag 3356, type external
@@ -21,7 +21,7 @@ Routing entry for 31.135.184.0/22
 ```
 
 ```
-route-views>show bgp 31.135.187.229
+route-views>show bgp 31.135.187.xxx
 BGP routing table entry for 31.135.184.0/22, version 2564340932
 Paths: (23 available, best #14, table default)
   Not advertised to any peer
