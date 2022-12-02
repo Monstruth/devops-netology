@@ -52,7 +52,7 @@ enp2s0: 8988509490 6928868    0   20    0     0          0      1554 626127200 4
 wlp3s0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
 monztro@monztro-laptop:~/Рабочий стол$ 
 ```
-в Windows команда ifconfig
+в Windows - "ipconfig /al | more" , "netsh interface show interface" , "netsh interface ip show interfaces"
 
 2
 
