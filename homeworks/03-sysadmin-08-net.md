@@ -69,7 +69,6 @@ monztro@monztro-laptop:~/Рабочий стол$ ip a
 5: dummy1: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
     link/ether 62:31:d3:93:60:34 brd ff:ff:ff:ff:ff:ff
 monztro@monztro-laptop:~/Рабочий стол$ sudo ip addr add 10.10.1.10/24 dev dummy0
-[sudo] пароль для monztro: 
 monztro@monztro-laptop:~/Рабочий стол$ sudo ip addr add 10.10.1.11/24 dev dummy1
 monztro@monztro-laptop:~/Рабочий стол$ sudo ip link set dev dummy0 up
 monztro@monztro-laptop:~/Рабочий стол$ sudo ip link set dev dummy1 up
