@@ -474,3 +474,8 @@ Unused:
 
 В Windows и Linux посмотреть таблицу можно командой `arp -a`
 
+очистить arp кэш в Windows можно командами `netsh interface IP delete arpcache` или `arp -d`
+
+в Linux команда `ip -s -s neigh flush all`
+
+удаление одного IP на обоих системах `arp -d <ip-address>`
