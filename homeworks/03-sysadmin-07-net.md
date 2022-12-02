@@ -174,3 +174,255 @@ HostMax:   10.10.10.6
 Broadcast: 10.10.10.7           
 Hosts/Net: 6                     Class A, Private Internet
 ```
+всего 8 адресов, из них 6 узловых
+
+```
+ipcalc -b 10.10.10.0/24 /29
+Address:   10.10.10.0           
+Netmask:   255.255.255.0 = 24   
+Wildcard:  0.0.0.255            
+=>
+Network:   10.10.10.0/24        
+HostMin:   10.10.10.1           
+HostMax:   10.10.10.254         
+Broadcast: 10.10.10.255         
+Hosts/Net: 254                   Class A, Private Internet
+
+Subnets after transition from /24 to /29
+
+Netmask:   255.255.255.248 = 29 
+Wildcard:  0.0.0.7              
+
+ 1.
+Network:   10.10.10.0/29        
+HostMin:   10.10.10.1           
+HostMax:   10.10.10.6           
+Broadcast: 10.10.10.7           
+Hosts/Net: 6                     Class A, Private Internet
+
+ 2.
+Network:   10.10.10.8/29        
+HostMin:   10.10.10.9           
+HostMax:   10.10.10.14          
+Broadcast: 10.10.10.15          
+Hosts/Net: 6                     Class A, Private Internet
+
+ 3.
+Network:   10.10.10.16/29       
+HostMin:   10.10.10.17          
+HostMax:   10.10.10.22          
+Broadcast: 10.10.10.23          
+Hosts/Net: 6                     Class A, Private Internet
+
+ 4.
+Network:   10.10.10.24/29       
+HostMin:   10.10.10.25          
+HostMax:   10.10.10.30          
+Broadcast: 10.10.10.31          
+Hosts/Net: 6                     Class A, Private Internet
+
+ 5.
+Network:   10.10.10.32/29       
+HostMin:   10.10.10.33          
+HostMax:   10.10.10.38          
+Broadcast: 10.10.10.39          
+Hosts/Net: 6                     Class A, Private Internet
+
+ 6.
+Network:   10.10.10.40/29       
+HostMin:   10.10.10.41          
+HostMax:   10.10.10.46          
+Broadcast: 10.10.10.47          
+Hosts/Net: 6                     Class A, Private Internet
+
+ 7.
+Network:   10.10.10.48/29       
+HostMin:   10.10.10.49          
+HostMax:   10.10.10.54          
+Broadcast: 10.10.10.55          
+Hosts/Net: 6                     Class A, Private Internet
+
+ 8.
+Network:   10.10.10.56/29       
+HostMin:   10.10.10.57          
+HostMax:   10.10.10.62          
+Broadcast: 10.10.10.63          
+Hosts/Net: 6                     Class A, Private Internet
+
+ 9.
+Network:   10.10.10.64/29       
+HostMin:   10.10.10.65          
+HostMax:   10.10.10.70          
+Broadcast: 10.10.10.71          
+Hosts/Net: 6                     Class A, Private Internet
+
+ 10.
+Network:   10.10.10.72/29       
+HostMin:   10.10.10.73          
+HostMax:   10.10.10.78          
+Broadcast: 10.10.10.79          
+Hosts/Net: 6                     Class A, Private Internet
+
+ 11.
+Network:   10.10.10.80/29       
+HostMin:   10.10.10.81          
+HostMax:   10.10.10.86          
+Broadcast: 10.10.10.87          
+Hosts/Net: 6                     Class A, Private Internet
+
+ 12.
+Network:   10.10.10.88/29       
+HostMin:   10.10.10.89          
+HostMax:   10.10.10.94          
+Broadcast: 10.10.10.95          
+Hosts/Net: 6                     Class A, Private Internet
+
+ 13.
+Network:   10.10.10.96/29       
+HostMin:   10.10.10.97          
+HostMax:   10.10.10.102         
+Broadcast: 10.10.10.103         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 14.
+Network:   10.10.10.104/29      
+HostMin:   10.10.10.105         
+HostMax:   10.10.10.110         
+Broadcast: 10.10.10.111         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 15.
+Network:   10.10.10.112/29      
+HostMin:   10.10.10.113         
+HostMax:   10.10.10.118         
+Broadcast: 10.10.10.119         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 16.
+Network:   10.10.10.120/29      
+HostMin:   10.10.10.121         
+HostMax:   10.10.10.126         
+Broadcast: 10.10.10.127         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 17.
+Network:   10.10.10.128/29      
+HostMin:   10.10.10.129         
+HostMax:   10.10.10.134         
+Broadcast: 10.10.10.135         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 18.
+Network:   10.10.10.136/29      
+HostMin:   10.10.10.137         
+HostMax:   10.10.10.142         
+Broadcast: 10.10.10.143         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 19.
+Network:   10.10.10.144/29      
+HostMin:   10.10.10.145         
+HostMax:   10.10.10.150         
+Broadcast: 10.10.10.151         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 20.
+Network:   10.10.10.152/29      
+HostMin:   10.10.10.153         
+HostMax:   10.10.10.158         
+Broadcast: 10.10.10.159         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 21.
+Network:   10.10.10.160/29      
+HostMin:   10.10.10.161         
+HostMax:   10.10.10.166         
+Broadcast: 10.10.10.167         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 22.
+Network:   10.10.10.168/29      
+HostMin:   10.10.10.169         
+HostMax:   10.10.10.174         
+Broadcast: 10.10.10.175         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 23.
+Network:   10.10.10.176/29      
+HostMin:   10.10.10.177         
+HostMax:   10.10.10.182         
+Broadcast: 10.10.10.183         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 24.
+Network:   10.10.10.184/29      
+HostMin:   10.10.10.185         
+HostMax:   10.10.10.190         
+Broadcast: 10.10.10.191         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 25.
+Network:   10.10.10.192/29      
+HostMin:   10.10.10.193         
+HostMax:   10.10.10.198         
+Broadcast: 10.10.10.199         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 26.
+Network:   10.10.10.200/29      
+HostMin:   10.10.10.201         
+HostMax:   10.10.10.206         
+Broadcast: 10.10.10.207         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 27.
+Network:   10.10.10.208/29      
+HostMin:   10.10.10.209         
+HostMax:   10.10.10.214         
+Broadcast: 10.10.10.215         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 28.
+Network:   10.10.10.216/29      
+HostMin:   10.10.10.217         
+HostMax:   10.10.10.222         
+Broadcast: 10.10.10.223         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 29.
+Network:   10.10.10.224/29      
+HostMin:   10.10.10.225         
+HostMax:   10.10.10.230         
+Broadcast: 10.10.10.231         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 30.
+Network:   10.10.10.232/29      
+HostMin:   10.10.10.233         
+HostMax:   10.10.10.238         
+Broadcast: 10.10.10.239         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 31.
+Network:   10.10.10.240/29      
+HostMin:   10.10.10.241         
+HostMax:   10.10.10.246         
+Broadcast: 10.10.10.247         
+Hosts/Net: 6                     Class A, Private Internet
+
+ 32.
+Network:   10.10.10.248/29      
+HostMin:   10.10.10.249         
+HostMax:   10.10.10.254         
+Broadcast: 10.10.10.255         
+Hosts/Net: 6                     Class A, Private Internet
+
+
+Subnets:   32
+Hosts:     192
+```
+
+Сеть с маской /24 можно разбить на 32 подсети с маской /29
+
+6
+
