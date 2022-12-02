@@ -139,3 +139,25 @@ systemd-resolved - это системная служба, которая обе
 
 #### 4. Проверьте используемые UDP сокеты в Ubuntu, какие протоколы и приложения используют эти порты?
 
+```
+sudo ss -unap
+State    Recv-Q   Send-Q          Local Address:Port        Peer Address:Port   Process                                                     
+UNCONN   0        0               127.0.0.53%lo:53               0.0.0.0:*       users:(("systemd-resolve",pid=665,fd=13))                  
+ESTAB    0        0          192.168.0.3%enp2s0:68           192.168.0.1:67      users:(("NetworkManager",pid=860,fd=26))                   
+UNCONN   0        0                     0.0.0.0:111              0.0.0.0:*       users:(("rpcbind",pid=664,fd=5),("systemd",pid=1,fd=33))   
+UNCONN   0        0                     0.0.0.0:631              0.0.0.0:*       users:(("cups-browsed",pid=1663,fd=7))                     
+UNCONN   0        0                 224.0.0.251:5353             0.0.0.0:*       users:(("yandex_browser",pid=2614,fd=132))                 
+UNCONN   0        0                 224.0.0.251:5353             0.0.0.0:*       users:(("yandex_browser",pid=2567,fd=200))                 
+UNCONN   0        0                     0.0.0.0:5353             0.0.0.0:*       users:(("avahi-daemon",pid=854,fd=12))                     
+UNCONN   0        0                     0.0.0.0:43489            0.0.0.0:*       users:(("avahi-daemon",pid=854,fd=14))                     
+UNCONN   0        0                        [::]:111                 [::]:*       users:(("rpcbind",pid=664,fd=7),("systemd",pid=1,fd=35))   
+UNCONN   0        0                        [::]:41363               [::]:*       users:(("avahi-daemon",pid=854,fd=15))                     
+UNCONN   0        0                        [::]:5353                [::]:*       users:(("avahi-daemon",pid=854,fd=13))     
+```
+
+порт 68 - Используется клиентскими машинами для получения информации о динамической IP-адресации от DHCP-сервера
+
+224.0.0.251 - это мультикастовый DNS использует порт 5353. операционные системы используют его для обнаружения новых устройств / принтеров / маршрутизаторов с нулевой или почти нулевой конфигурацией. зачем то прослушивает яндекс браузер
+
+5. Используя diagrams.net, создайте L3 диаграмму вашей домашней сети или любой другой сети, с которой вы работали.
+
