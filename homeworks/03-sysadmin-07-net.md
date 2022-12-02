@@ -163,7 +163,7 @@ vagrant@vagrant:~$
 
 5
 
-`ipcalc -b 10.10.10.0/29
+```ipcalc -b 10.10.10.0/29
 Address:   10.10.10.0           
 Netmask:   255.255.255.248 = 29 
 Wildcard:  0.0.0.7              
@@ -173,4 +173,4 @@ HostMin:   10.10.10.1
 HostMax:   10.10.10.6           
 Broadcast: 10.10.10.7           
 Hosts/Net: 6                     Class A, Private Internet
-`
+```
