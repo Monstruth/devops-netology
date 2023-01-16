@@ -20,5 +20,27 @@
 - Vagrant
 - Ansible
 
-*Приложить вывод команд установленных версий каждой из программ, оформленный в markdown.*
+```
+vagrant version
+Installed Version: 2.3.3.dev
+```
+
+```
+VBoxManage --version
+6.1.38_Ubuntur153438
+```
+
+```
+ ansible --version
+ansible [core 2.13.7]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/monztro/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/monztro/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+  jinja version = 3.0.3
+  libyaml = True
+```
+
 
