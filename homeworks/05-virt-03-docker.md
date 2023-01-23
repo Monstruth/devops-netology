@@ -72,3 +72,39 @@ Gitlab сервер для реализации CI/CD процессов и пр
 - Добавьте еще один файл в папку ```/data``` на хостовой машине;
 - Подключитесь во второй контейнер и отобразите листинг и содержание файлов в ```/data``` контейнера.
 
+Решение
+
+```
+docker run -v /data:/data --name centos-container -d -t centos
+Unable to find image 'centos:latest' locally
+latest: Pulling from library/centos
+a1d0c7532777: Pull complete 
+Digest: sha256:a27fd8080b517143cbbbab9dfb7c8571c40d67d534bbdee55bd6c473f432b177
+Status: Downloaded newer image for centos:latest
+9c54810edd097cbdde2283ad4b1331b4941ef15571e9375fc190e74380724774
+
+docker run -v /data:/data --name debian-container -d -t debian
+Unable to find image 'debian:latest' locally
+latest: Pulling from library/debian
+bbeef03cda1f: Pull complete 
+Digest: sha256:534da5794e770279c889daa891f46f5a530b0c5de8bfbc5e40394a0164d9fa87
+Status: Downloaded newer image for debian:latest
+80c96b4f71a09613d01faa8fb673cc9f1bc6c76af8e8d99a179b607ebbd742e5
+
+docker ps
+CONTAINER ID   IMAGE     COMMAND       CREATED              STATUS              PORTS     NAMES
+80c96b4f71a0   debian    "bash"        24 seconds ago       Up 22 seconds                 debian-container
+9c54810edd09   centos    "/bin/bash"   About a minute ago   Up About a minute             centos-container
+
+docker exec centos-container /bin/bash -c "echo test_message>/data/readme.txt"
+
+/data# echo test > test.txt
+
+docker exec -it debian-container /bin/bash
+root@80c96b4f71a0:/# cd /data
+root@80c96b4f71a0:/data# ls -l
+total 8
+-rw-r--r-- 1 root root 13 Jan 23 23:30 readme.txt
+-rw-r--r-- 1 root root  5 Jan 23 23:42 test.txt
+root@80c96b4f71a0:/data# 
+```
