@@ -21,6 +21,8 @@ Hey, Netology
 
 Ответ - https://hub.docker.com/repository/docker/perepelitsynam/my-netology/general
 
+запускаем командой ``` docker run -d -p 80:80 perepelitsynam/my-netology:netologyinx ```
+
 ## Задача 2
 
 Посмотрите на сценарий ниже и ответьте на вопрос:
