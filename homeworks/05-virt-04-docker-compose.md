@@ -15,13 +15,6 @@
 Создать вашу первую виртуальную машину в YandexCloud с помощью terraform. 
 Используйте terraform код в директории ([src/terraform](https://github.com/netology-group/virt-homeworks/tree/virt-11/05-virt-04-docker-compose/src/terraform))
 
-Для получения зачета, вам необходимо предоставить вывод команды terraform apply и страницы свойств созданной ВМ из личного кабинета YandexCloud.
-
-## Задача 3
-
-С помощью ansible и docker-compose разверните на виртуальной машине из предыдущего задания систему мониторинга на основе Prometheus/Grafana .
-Используйте ansible код в директории ([src/ansible](https://github.com/netology-group/virt-homeworks/tree/virt-11/05-virt-04-docker-compose/src/ansible))
-
 ```
 root@monztro-laptop:/home/monztro/yandex-cloud# terraform apply
 
@@ -118,6 +111,15 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 root@monztro-laptop:/home/monztro/yandex-cloud# 
 ```
 
+![terraform](https://user-images.githubusercontent.com/105611781/216763804-f4706aa4-cc54-47af-84e8-84dd7e3dd0bf.png)
+
+
+Для получения зачета, вам необходимо предоставить вывод команды terraform apply и страницы свойств созданной ВМ из личного кабинета YandexCloud.
+
+## Задача 3
+
+С помощью ansible и docker-compose разверните на виртуальной машине из предыдущего задания систему мониторинга на основе Prometheus/Grafana .
+Используйте ansible код в директории ([src/ansible](https://github.com/netology-group/virt-homeworks/tree/virt-11/05-virt-04-docker-compose/src/ansible))
 
 
 Для получения зачета вам необходимо предоставить вывод команды "docker ps" , все контейнеры, описанные в ([docker-compose](https://github.com/netology-group/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/src/ansible/stack/docker-compose.yaml)),  должны быть в статусе "Up".
