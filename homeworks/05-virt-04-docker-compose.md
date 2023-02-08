@@ -111,8 +111,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 root@monztro-laptop:/home/monztro/yandex-cloud# 
 ```
 
-![terraform](https://user-images.githubusercontent.com/105611781/216763804-f4706aa4-cc54-47af-84e8-84dd7e3dd0bf.png)
-
+![2](https://user-images.githubusercontent.com/105611781/217668177-ca3c1c59-4720-4b78-b3f4-dfdc1f6d3f17.png)
 
 Для получения зачета, вам необходимо предоставить вывод команды terraform apply и страницы свойств созданной ВМ из личного кабинета YandexCloud.
 
@@ -148,9 +147,8 @@ aa422665c692   prom/pushgateway:v1.2.0            "/bin/pushgateway"       About
 3. Изучите доступный интерфейс, найдите в интерфейсе автоматически созданные docker-compose панели с графиками([dashboards](https://grafana.com/docs/grafana/latest/dashboards/use-dashboards/)).
 4. Подождите 5-10 минут, чтобы система мониторинга успела накопить данные.
 
-Для получения зачета, вам необходимо предоставить: 
-- Скриншот работающего веб-интерфейса Grafana с текущими метриками, как на примере ниже
-<p align="center">
-  <img width="1200" height="600" src="./assets/yc_02.png">
-</p>
+![prom](https://user-images.githubusercontent.com/105611781/217668397-be8d4632-d962-4997-976f-686d23d8733e.png)
+
+![dock](https://user-images.githubusercontent.com/105611781/217668428-13c9a682-8e2b-4a4b-bcf0-0096955a64a6.png)
+
 
