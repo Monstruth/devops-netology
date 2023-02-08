@@ -124,6 +124,23 @@ root@monztro-laptop:/home/monztro/yandex-cloud#
 
 Для получения зачета вам необходимо предоставить вывод команды "docker ps" , все контейнеры, описанные в ([docker-compose](https://github.com/netology-group/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/src/ansible/stack/docker-compose.yaml)),  должны быть в статусе "Up".
 
+```
+[centos@node01 ~]$ docker ps
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json": dial unix /var/run/docker.sock: connect: permission denied
+[centos@node01 ~]$ sudo docker ps
+CONTAINER ID   IMAGE                              COMMAND                  CREATED              STATUS                    PORTS                                                                              NAMES
+ab21d6dcaf26   grafana/grafana:7.4.2              "/run.sh"                About a minute ago   Up 48 seconds             3000/tcp                                                                           grafana
+7e722e73ef60   gcr.io/cadvisor/cadvisor:v0.47.0   "/usr/bin/cadvisor -…"   About a minute ago   Up 47 seconds (healthy)   8080/tcp                                                                           cadvisor
+65b4dedd38fe   prom/prometheus:v2.17.1            "/bin/prometheus --c…"   About a minute ago   Up 46 seconds             9090/tcp                                                                           prometheus
+ab92e716917d   stefanprodan/caddy                 "/sbin/tini -- caddy…"   About a minute ago   Up 45 seconds             0.0.0.0:3000->3000/tcp, 0.0.0.0:9090-9091->9090-9091/tcp, 0.0.0.0:9093->9093/tcp   caddy
+f4f89d49ff2f   prom/alertmanager:v0.20.0          "/bin/alertmanager -…"   About a minute ago   Up 46 seconds             9093/tcp                                                                           alertmanager
+ef6e030d418a   prom/node-exporter:v0.18.1         "/bin/node_exporter …"   About a minute ago   Up 45 seconds             9100/tcp                                                                           nodeexporter
+aa422665c692   prom/pushgateway:v1.2.0            "/bin/pushgateway"       About a minute ago   Up 45 seconds             9091/tcp                                                                           pushgateway
+[centos@node01 ~]$ 
+```
+![docker1](https://user-images.githubusercontent.com/105611781/217666876-e9b2dd91-dc0d-4efe-b458-7cf7e271bdac.png)
+
+
 ## Задача 4
 
 1. Откройте веб-браузер, зайдите на страницу http://<внешний_ip_адрес_вашей_ВМ>:3000.
