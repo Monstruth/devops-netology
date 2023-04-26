@@ -31,6 +31,17 @@ variable "vpc_name" {
   description = "VPC network & subnet name"
 }
 
+variable "vm_web_image" {
+  type        = string
+  default     = "ubuntu-2004-lts"
+  description = "compute image"
+}
+
+variable "vm_web_instance" {
+  type        = string
+  default     = "netology-develop-platform-web"
+  description = "compute instance"
+}
 
 ###ssh vars
 
