@@ -37,21 +37,38 @@ variable "vm_web_image" {
   description = "compute image"
 }
 
-variable "vm_web_instance" {
-  type        = string
-  default     = "netology-develop-platform-web"
-  description = "compute instance"
-}
+#variable "vm_web_instance" {
+ # type        = string
+  #default     = "netology-develop-platform-web"
+ # description = "compute instance"
+# }
 
 variable "platform" {
   type        = string
   default     = "platform"
 }
 
+variable "vm_web_resources" {
+  type = map
+  default = {
+    cores          = 2
+    memory         = 1
+    core_fraction  = 5
+  }
+}
+
 ###ssh vars
 
-variable "vms_ssh_root_key" {
-  type        = string
-  default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDY7TuKDvoZAcFEUMzHSAFhLXcGlr5nvG45h/emkpJx2 monztro@monztro-laptop"
-  description = "ssh-keygen -t ed25519"
+#variable "vms_ssh_root_key" {
+ # type        = string
+  # default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDY7TuKDvoZAcFEUMzHSAFhLXcGlr5nvG45h/emkpJx2 monztro@monztro-laptop"
+ # description = "ssh-keygen -t ed25519"
+# }
+
+variable "vm_metadata" {
+  type = map
+  default = {
+    serial-port-enable = 1
+    ssh-key            = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDY7TuKDvoZAcFEUMzHSAFhLXcGlr5nvG45h/emkpJx2"
+  }
 }
