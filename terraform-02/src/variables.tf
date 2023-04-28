@@ -43,6 +43,11 @@ variable "vm_web_instance" {
   description = "compute instance"
 }
 
+variable "platform" {
+  type        = string
+  default     = "platform"
+}
+
 ###ssh vars
 
 variable "vms_ssh_root_key" {
