@@ -79,10 +79,9 @@ test_db=# SELECT grantee, table_catalog, table_name, privilege_type FROM informa
 
 ![03](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/78da746e-cfd7-4e67-a64d-fa644d2ce2be)
 
-Дядь, прости засранца. Не успел сделать, отправь на доработку :pleading_face:
 
 ## Задача 3
-
+<details>
 Используя SQL-синтаксис, наполните таблицы следующими тестовыми данными:
 
 Таблица orders
@@ -105,6 +104,7 @@ test_db=# SELECT grantee, table_catalog, table_name, privilege_type FROM informa
 |Ронни Джеймс Дио| Russia|
 |Ritchie Blackmore| Russia|
 
+</details>
 Используя SQL-синтаксис:
 - вычислите количество записей для каждой таблицы.
 
@@ -113,7 +113,12 @@ test_db=# SELECT grantee, table_catalog, table_name, privilege_type FROM informa
     - запросы,
     - результаты их выполнения.
 
+![04](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/74fd7aa0-5ca5-49a8-b50e-41dc9606e48d)
+
+
 ## Задача 4
+
+Дядь, прости засранца. Не успел сделать, отправь на доработку :pleading_face:
 
 Часть пользователей из таблицы clients решили оформить заказы из таблицы orders.
 
