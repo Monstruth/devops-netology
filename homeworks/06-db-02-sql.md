@@ -35,7 +35,6 @@ services:
       - backup:/var/lib/postgresql/backup
 
 ```
-Дядь, прости засранца. Не успел сделать, отправь на доработку :pleading_face:
 
 ## Задача 2
 <details>
@@ -80,6 +79,7 @@ test_db=# SELECT grantee, table_catalog, table_name, privilege_type FROM informa
 
 ![03](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/78da746e-cfd7-4e67-a64d-fa644d2ce2be)
 
+Дядь, прости засранца. Не успел сделать, отправь на доработку :pleading_face:
 
 ## Задача 3
 
