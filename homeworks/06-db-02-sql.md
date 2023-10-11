@@ -132,6 +132,16 @@ test_db=# SELECT grantee, table_catalog, table_name, privilege_type FROM informa
 
 Приведите SQL-запросы для выполнения этих операций.
 
+```
+test_db=# UPDATE clients SET заказ=(select id from orders where наименование='Книга') WHERE фамилия='Иванов Иван Иванович';
+UPDATE 1
+test_db=# UPDATE clients SET заказ=(select id from orders where наименование='Монитор') WHERE фамилия='Петров Петр Петрович';
+UPDATE 1
+test_db=# UPDATE clients SET заказ=(select id from orders where наименование='Гитара') WHERE фамилия='Иоганн Себастьян Бах';
+UPDATE 1
+test_db=# 
+```
+
 Приведите SQL-запрос для выдачи всех пользователей, которые совершили заказ, а также вывод этого запроса.
  
 Подсказка: используйте директиву `UPDATE`.
