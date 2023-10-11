@@ -6,11 +6,13 @@
 [дополнительными материалами](https://github.com/netology-code/virt-homeworks/blob/virt-11/additional/README.md).
 
 ## Задача 1
-
+<details>
 Используя Docker, поднимите инстанс PostgreSQL (версию 12) c 2 volume, 
 в который будут складываться данные БД и бэкапы.
 
 Приведите получившуюся команду или docker-compose-манифест.
+</details>
+
 ```yaml
 version: '3.8'
 
