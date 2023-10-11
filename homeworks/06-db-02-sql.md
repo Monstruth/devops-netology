@@ -64,9 +64,22 @@ services:
 Приведите:
 
 - итоговый список БД после выполнения пунктов выше;
+
+![01](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/f97cba3f-30a3-4d85-9e53-e62af894f7ad)
+
 - описание таблиц (describe);
+
+![02](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/0e5c9a31-11c9-41b5-8517-8c27839c72d3)
+
 - SQL-запрос для выдачи списка пользователей с правами над таблицами test_db;
+```
+test_db=# SELECT grantee, table_catalog, table_name, privilege_type FROM information_schema.table_privileges WHERE table_name IN ('orders','clients');
+```
+
 - список пользователей с правами над таблицами test_db.
+
+![03](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/78da746e-cfd7-4e67-a64d-fa644d2ce2be)
+
 
 ## Задача 3
 
