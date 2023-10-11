@@ -38,7 +38,7 @@ services:
 Дядь, прости засранца. Не успел сделать, отправь на доработку :pleading_face:
 
 ## Задача 2
-
+<details>
 В БД из задачи 1: 
 
 - создайте пользователя test-admin-user и БД test_db;
@@ -59,6 +59,7 @@ services:
 - фамилия (string);
 - страна проживания (string, index);
 - заказ (foreign key orders).
+</details>
 
 Приведите:
 
