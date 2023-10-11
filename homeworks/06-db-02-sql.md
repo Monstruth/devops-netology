@@ -20,7 +20,7 @@ volumes:
 
 services:
   postgres:
-    container_name: postgres_container
+    container_name: postgres_12
     image: postgres:12
     restart: always
     environment:
