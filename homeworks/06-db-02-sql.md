@@ -33,6 +33,7 @@ services:
       - backup:/var/lib/postgresql/backup
 
 ```
+Дядь, прости засранца. Не успел сделать, отправь на доработку :pleading_face:
 
 ## Задача 2
 
