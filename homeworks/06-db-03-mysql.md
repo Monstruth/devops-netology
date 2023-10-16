@@ -20,6 +20,8 @@
 
 В следующих заданиях мы будем продолжать работу с этим контейнером.
 
+![01](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/e81aed5e-d93e-4417-9cfd-770a3a3a3906)
+
 ## Задача 2
 
 Создайте пользователя test в БД c паролем test-pass, используя:
@@ -37,6 +39,8 @@
 Используя таблицу INFORMATION_SCHEMA.USER_ATTRIBUTES, получите данные по пользователю `test` и 
 **приведите в ответе к задаче**.
 
+![02](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/6cbbb287-88dd-4e22-89fe-be4f9128a0e6)
+
 ## Задача 3
 
 Установите профилирование `SET profiling = 1`.
@@ -48,9 +52,15 @@
 - на `MyISAM`,
 - на `InnoDB`.
 
+![03](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/f5fbac0b-f7c4-4516-b975-8862620447c3)
+
+
 ## Задача 4 
 
 Изучите файл `my.cnf` в директории /etc/mysql.
+
+![04](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/78e946f7-ed13-461a-a717-83c58e76e8b9)
+
 
 Измените его согласно ТЗ (движок InnoDB):
 
@@ -62,11 +72,7 @@
 
 Приведите в ответе изменённый файл `my.cnf`.
 
----
-
-### Как оформить ДЗ
-
-Выполненное домашнее задание пришлите ссылкой на .md-файл в вашем репозитории.
+![05](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/ec2a55ac-b11c-4c8d-89ca-5d605103a081)
 
 ---
 
