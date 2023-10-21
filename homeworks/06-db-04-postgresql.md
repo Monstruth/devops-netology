@@ -61,7 +61,7 @@
 
 Предложите SQL-транзакцию для проведения этой операции.
 
-```
+```postgresql
 test_database=# CREATE TABLE "orders_1 - price>499" (CHECK (price > 499)) INHERITS (orders);
 CREATE TABLE
 test_database=# INSERT INTO "orders_1 - price>499" SELECT * FROM orders WHERE price > 499;
@@ -85,6 +85,12 @@ test_database=#
 ```
 
 Можно ли было изначально исключить ручное разбиение при проектировании таблицы orders?
+
+Да, прописав правила вставки, например:
+```postgresql
+CREATE RULE orders_insert_to_more AS ON INSERT TO orders WHERE ( price > 499 ) DO INSTEAD INSERT INTO  "orders_1 - price>499" VALUES (NEW.*);
+CREATE RULE orders_insert_to_less AS ON INSERT TO orders WHERE ( price <= 499 ) DO INSTEAD INSERT INTO "orders_2 - price<=499" VALUES (NEW.*);
+```
 
 ## Задача 4
 
