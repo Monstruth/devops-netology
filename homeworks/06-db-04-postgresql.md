@@ -97,6 +97,13 @@ CREATE RULE orders_insert_to_less AS ON INSERT TO orders WHERE ( price <= 499 ) 
 
 Используя утилиту `pg_dump`, создайте бекап БД `test_database`.
 
+![10](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/47173f76-3c99-4502-bf8f-4fddd6cec6ec)
+
 Как бы вы доработали бэкап-файл, чтобы добавить уникальность значения столбца `title` для таблиц `test_database`?
+
+добавить свойство UNIQUE
+
+```title character varying(80) NOT NULL UNIQUE,
+```
 
 ---
