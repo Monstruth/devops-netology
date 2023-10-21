@@ -11,10 +11,19 @@
 **Найдите и приведите** управляющие команды для:
 
 - вывода списка БД,
+![01](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/01362ed8-fefe-47b4-8e33-cae7c5fe610c)
+
 - подключения к БД,
+![02](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/efd5685b-86a6-4bbf-ad1f-e0b317916b02)
+
 - вывода списка таблиц,
+![03](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/d1135e6f-4c12-47f5-bb33-78a6f6f22dbb)
+
 - вывода описания содержимого таблиц,
+![04](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/6ad29e27-432b-4646-8ad0-11449d87d00a)
+
 - выхода из psql.
+![05](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/e04254c8-045c-4db8-8629-5990af880ce2)
 
 ## Задача 2
 
