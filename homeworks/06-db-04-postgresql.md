@@ -33,9 +33,13 @@
 
 Используя `psql`, создайте БД `test_database`.
 
+![06](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/d5d5c9a3-2090-44f6-b86c-c9ebe770d994)
+
 Изучите [бэкап БД](https://github.com/netology-code/virt-homeworks/tree/virt-11/06-db-04-postgresql/test_data).
 
 Восстановите бэкап БД в `test_database`.
+
+![07](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/67bc4d75-a5a5-41cc-8351-1b5b7b76d3fb)
 
 Перейдите в управляющую консоль `psql` внутри контейнера.
 
@@ -45,6 +49,9 @@
 с наибольшим средним значением размера элементов в байтах.
 
 **Приведите в ответе** команду, которую вы использовали для вычисления, и полученный результат.
+
+![08](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/5195851c-661d-4463-acc3-adc8c92a8a28)
+
 
 ## Задача 3
 
