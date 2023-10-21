@@ -103,7 +103,8 @@ CREATE RULE orders_insert_to_less AS ON INSERT TO orders WHERE ( price <= 499 ) 
 
 добавить свойство UNIQUE
 
-```title character varying(80) NOT NULL UNIQUE,
+```
+title character varying(80) NOT NULL UNIQUE,
 ```
 
 ---
