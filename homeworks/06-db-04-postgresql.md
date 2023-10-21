@@ -26,6 +26,7 @@
 ![04](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/6ad29e27-432b-4646-8ad0-11449d87d00a)
 
 - выхода из psql.
+
 ![05](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/e04254c8-045c-4db8-8629-5990af880ce2)
 
 ## Задача 2
