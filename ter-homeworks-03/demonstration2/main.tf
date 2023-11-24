@@ -84,7 +84,7 @@ depends_on = [yandex_compute_instance.example]
 
 #Добавление ПРИВАТНОГО ssh ключа в ssh-agent
   provisioner "local-exec" {
-    command = "cat ~/.ssh/id_rsa | ssh-add -"
+    command = "cat ~/.ssh/id_ed25519.pub | ssh-add -"
   }
 
 #Костыль!!! Даем ВМ 60 сек на первый запуск. Лучше выполнить это через wait_for port 22 на стороне ansible
