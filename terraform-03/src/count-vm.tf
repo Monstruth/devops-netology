@@ -38,3 +38,4 @@ resource "yandex_compute_instance" "example" {
   }
   allow_stopping_for_update = true
 }
+
