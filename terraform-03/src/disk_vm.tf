@@ -29,6 +29,7 @@ resource "yandex_compute_instance" "storage" {
 
   network_interface {
     subnet_id          = yandex_vpc_subnet.develop.id
+    nat       = true
   }
 
   metadata = local.ssh_keys_and_serial_port
