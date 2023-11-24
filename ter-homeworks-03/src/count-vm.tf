@@ -5,7 +5,7 @@ data "yandex_compute_image" "ubuntu-2004-lts" {
 
 #создаем 2 идентичные ВМ
 resource "yandex_compute_instance" "example" {
-  name        = "netology-develop-platform-web-${count.index}"
+  name        = "web-${count.index}"
   platform_id = "standard-v1"
 
   count = 2
