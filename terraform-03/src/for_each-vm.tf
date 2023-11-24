@@ -24,7 +24,6 @@ resource "yandex_compute_instance" "for_each" {
   network_interface {
     subnet_id = yandex_vpc_subnet.develop.id
     nat       = true
-    security_group_ids = [yandex_vpc_security_group.example.id]
   }
 
 
