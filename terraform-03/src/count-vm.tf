@@ -5,6 +5,7 @@ data "yandex_compute_image" "ubuntu-2004-lts" {
 
 #создаем 2 идентичные ВМ
 resource "yandex_compute_instance" "example" {
+  depends_on = [yandex_compute_instance.for_each]
   name        = "web-${count.index + 1}"
   platform_id = "standard-v1"
 
