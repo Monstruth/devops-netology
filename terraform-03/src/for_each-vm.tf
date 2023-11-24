@@ -18,6 +18,9 @@ resource "yandex_compute_instance" "for_each" {
       size = "${each.value.disk}"
     }
   }
+
+  metadata = local.ssh_keys_and_serial_port
+
   scheduling_policy {
     preemptible = true
   }
@@ -25,8 +28,6 @@ resource "yandex_compute_instance" "for_each" {
     subnet_id = yandex_vpc_subnet.develop.id
     nat       = true
   }
-
-
 
 }
 

@@ -25,9 +25,7 @@ resource "yandex_compute_instance" "example" {
     }
   }
 
-  metadata = {
-    ssh-keys = "ubuntu:${var.public_key}"
-  }
+  metadata = local.ssh_keys_and_serial_port
 
   scheduling_policy { preemptible = true }
 
