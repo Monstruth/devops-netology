@@ -1,10 +1,7 @@
 
 resource "yandex_compute_instance" "for_each" {
-  for_each = {
-    main = var.each_vm[0]
-    replica = var.each_vm[1]
-  }
-  name        = "${each.key}"
+  for_each = var.each_vm
+  name        = "${each.value.vm_name}"
   platform_id = "standard-v1"
   resources {
     cores         = "${each.value.cpu}"
@@ -32,9 +29,9 @@ resource "yandex_compute_instance" "for_each" {
 }
 
 variable "each_vm" {
-  type = list(object({  cpu=number, ram=number, disk=number }))
+  type = list(object({  vm_name=string, cpu=number, ram=number, disk=number }))
   default = [
-    {  cpu=4, ram=2, disk=10 },
-    {  cpu=2, ram=1, disk=15 }
+    { vm_name="main",  cpu=4, ram=2, disk=10 },
+    { vm_name="replica", cpu=2, ram=1, disk=15 }
   ]
 }
