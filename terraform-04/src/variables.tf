@@ -31,7 +31,9 @@ variable "vpc_name" {
   description = "VPC network&subnet name"
 }
 
+
 variable "ssh_public_key" {
-  type    = string
-  default = ""
+  type        = string
+  default     = "your_ssh_ed25519_key"
+  description = "ssh-keygen -t ed25519"
 }
