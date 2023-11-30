@@ -31,8 +31,13 @@ variable "vpc_name" {
   description = "VPC network&subnet name"
 }
 
+variable "username" {
+  type        = string
+  default     = "ubuntu"
+  description = "Username for login into VM"
+}
 
-variable "ssh_public_key" {
+variable "vms_ssh_root_key" {
   type        = string
   default     = "your_ssh_ed25519_key"
   description = "ssh-keygen -t ed25519"

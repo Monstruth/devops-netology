@@ -50,10 +50,9 @@ module "test-vm" {
 #Пример передачи cloud-config в ВМ для демонстрации №3
 data "template_file" "cloudinit" {
  template = file("./cloud-init.yml")
-#  vars = {ssh_public_key = var.ssh_public_key}
-}
-
-vars = {
-    username           = ubuntu
+   vars = {
+    username           = var.username
     ssh_public_key     = local.ssh_public_key
   }
+}
+
