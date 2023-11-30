@@ -53,3 +53,7 @@ data "template_file" "cloudinit" {
   vars = {ssh_public_key = var.ssh_public_key}
 }
 
+vars = {
+    username           = ubuntu
+    ssh_public_key     = local.ssh_public_key
+  }
