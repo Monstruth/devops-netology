@@ -58,7 +58,6 @@ Task'и:
 - ```vector_architecture: "x86_64"``` - архитектура ОС
 
 Task'и:
-
 - ```TASK [Get Vector distrib]``` - скачивает архив с дистрибутивом с помощью модуля ```ansible.builtin.get_url```
 - ```TASK [Unarchive Vector package]``` - распаковывает скачанный архив с помощью модуля ```ansible.builtin.unarchive```
 - ```TASK [Create Vector directory]``` - создает каталог для данных Vector с помощью модуля ```ansible.builtin.file```

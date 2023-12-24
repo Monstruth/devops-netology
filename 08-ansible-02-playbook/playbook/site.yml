@@ -8,7 +8,7 @@
         name: clickhouse-server
         state: restarted
   tasks:
-    - name: Install Clickhouse and start
+    - name: Clickhouse. Get clickhouse distrib
       block:
         - name: Get clickhouse distrib
           ansible.builtin.get_url:
