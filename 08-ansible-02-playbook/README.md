@@ -45,12 +45,12 @@
 - ```clickhouse_packages: ["clickhouse-client", "clickhouse-server", "clickhouse-common-static"]``` - список пакетов для установки
 
 Task'и:
-- ```TASK [Clickhouse. Get clickhouse distrib]``` - скачивает rpm-пакеты с дистрибутивами с помощью модуля ```ansible.builtin.get_url```
-- ```TASK [Clickhouse. Install clickhouse packages]``` - устанавливает набор пакетов с помощью модуля ```ansible.builtin.yum```
-- ```TASK [Clickhouse. Flush handlers]``` - инициирует внеочередной запуск хандлера ```Start clickhouse service```
+- ```TASK [Clickhouse. Get clickhouse distrib]``` - скачивает rpm-пакеты с дистрибутивами с помощью модуля ```ansible.builtin.get_url``` при этом использованы параметры ```block``` и ```rescue``` то есть использован блок восстановления задачи в случае сбоя, в данном случае при ошибке скачивания дистрибубутива, будет использован другой вариант закачки.
+- ```TASK [Install clickhouse packages]``` - устанавливает набор пакетов с помощью модуля ```ansible.builtin.yum```
+- ```notify [Start clickhouse service]``` - инициирует внеочередной запуск хандлера ```Start clickhouse service```
 - ```RUNNING HANDLER [Start clickhouse service]``` - для старта сервера ```clickhouse``` в хандлере используется модуль ```ansible.builtin.service```
-- ```TASK [Clickhouse. Wait for clickhouse-server to become available]``` - устанавливает паузу в 20 секунд с помощью модуля ```ansible.builtin.pause```, чтобы сервер Clickhouse успел запуститься. Иначе следующая задача по созданию БД может завершиться ошибкой, т.к. сервер еще не успел подняться
-- ```TASK [Clickhouse. Create database]``` - создает инстанс базы данных Clickhouse
+- ```TASK [Pause 20 sec]``` - устанавливает паузу в 20 секунд с помощью модуля ```ansible.builtin.pause```, чтобы сервер Clickhouse успел запуститься. Иначе следующая задача по созданию БД может завершиться ошибкой, т.к. сервер еще не успел подняться
+- ```TASK [Create database]``` - создает инстанс базы данных Clickhouse
 
 #### 2. Второй блок объединяет последовательность задач по инсталяции Vector. 
 В блоке используются параметры:
@@ -58,11 +58,12 @@ Task'и:
 - ```vector_architecture: "x86_64"``` - архитектура ОС
 
 Task'и:
-- ```TASK [Create Vector directory]``` - создает рабочий каталог, в котором будут сохранены скачанные rpm-пакеты, с помощью модуля ```ansible.builtin.file```
-- ```TASK [Vector. Get Vector distributive]``` - скачивает архив с дистрибутивом с помощью модуля ```ansible.builtin.get_url```
-- ```TASK [Vector. Unzip archive]``` - распаковывает скачанный архив с помощью модуля ```ansible.builtin.unarchive```
-- ```TASK [Vector. Create data_dir]``` - создает каталог для данных Vector с помощью модуля ```ansible.builtin.file```
-- ```RUNNING HANDLER [Start Vector service]``` - инициируется запуск хандлера ```Start Vector service```, обновляющего конфигурацию systemd и стартующего сервис ```vector.service``` с помощью модуля ```ansible.builtin.systemd```
 
+- ```TASK [Get Vector distrib]``` - скачивает архив с дистрибутивом с помощью модуля ```ansible.builtin.get_url```
+- ```TASK [Unarchive Vector package]``` - распаковывает скачанный архив с помощью модуля ```ansible.builtin.unarchive```
+- ```TASK [Create Vector directory]``` - создает каталог для данных Vector с помощью модуля ```ansible.builtin.file```
+- ```RUNNING HANDLER [Start Vector service]``` - инициируется запуск хандлера ```Start Vector service```
+- ```TASK [Pause 20 sec]``` - устанавливает паузу в 20 секунд с помощью модуля ```ansible.builtin.pause```
+- ```TASK [Template file]``` - копирует файл конфигурации Vector
 
 ---
