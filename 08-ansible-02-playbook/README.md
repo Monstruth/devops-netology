@@ -27,13 +27,11 @@
 
 7. Запустите playbook на `prod.yml` окружении с флагом `--diff`. Убедитесь, что изменения на системе произведены.
 
-![07](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/b6462927-63d8-4ad1-a113-eb9fdd174222)
+![07](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/6ef6c719-22dc-49fb-a85f-63c4ec1f1ee0)
 
 8. Повторно запустите playbook с флагом `--diff` и убедитесь, что playbook идемпотентен.
 
-![08](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/969a9991-03a8-4d26-88d8-96d2d0aa800a)
-
-Для запуска Вектора использован модуль shell, наверное поэтому он считает что изменение произошло
+![08](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/c6c9b7eb-b31d-4372-ac1e-f9bd18141114)
 
 9. Подготовьте README.md-файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги. Пример качественной документации ansible playbook по [ссылке](https://github.com/opensearch-project/ansible-playbook). Так же приложите скриншоты выполнения заданий №5-8
 10. Готовый playbook выложите в свой репозиторий, поставьте тег `08-ansible-02-playbook` на фиксирующий коммит, в ответ предоставьте ссылку на него.
