@@ -17,6 +17,8 @@
 
 ![05](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/b9880e09-58b4-4086-a70e-cdb2d37d3fd5)
 
+Не было имени у таски. у block стоял минусик, а он там не нужен. Не были установлены права на создание папок и файлов.
+
 6. Попробуйте запустить playbook на этом окружении с флагом `--check`.
 
 ![06](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/4872fb3b-ae32-402e-a52b-86f8629418ea)
