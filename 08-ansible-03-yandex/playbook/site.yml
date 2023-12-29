@@ -118,9 +118,6 @@
       register: nginx_version_result
       ignore_errors: true
       changed_when: false
-      when:
-        - nginx_version_result.failed == true
-        - nginx_version not in nginx_version_result.stdout
       block:
         - name: Get NGINX distrib
           become: true
@@ -150,6 +147,9 @@
         - name: Make NGINX callable
           become: true
           ansible.builtin.command: ln -s /usr/local/nginx/sbin/nginx /usr/bin/nginx
+      when:
+        - nginx_version_result.failed == true
+        - nginx_version not in nginx_version_result.stdout
     - name: Configure nginx config for site
       become: true
       ansible.builtin.template:
