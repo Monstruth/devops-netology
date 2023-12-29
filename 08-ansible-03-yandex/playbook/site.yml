@@ -118,7 +118,8 @@
       register: nginx_version_result
       ignore_errors: true
       changed_when: false
-    - block:
+    - name: Get and Install NGINX
+      block:
       - name: Get NGINX distrib
         become: true
         ansible.builtin.get_url:
