@@ -25,3 +25,11 @@
 Выполненное домашнее задание пришлите в виде ссылки на .md-файл в вашем репозитории.
 
 ---
+![clickhouse](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/055045f3-1143-4baf-ad2d-c61ce16b0279)
+
+![vector](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/fad0ac20-bf24-469d-9614-0cc266dc01a3)
+
+![lighthouse](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/3a779cce-090b-4f46-ba3e-d10848617276)
+
+![play](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/fa86f822-1faa-4e41-acc3-a5a500b967b9)
+
