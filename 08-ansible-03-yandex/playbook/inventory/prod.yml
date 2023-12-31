@@ -4,7 +4,7 @@ clickhouse:
     clickhouse-01:
       ansible_connection: ssh
       ansible_ssh_user: admin
-      ansible_host: 51.250.109.64
+      ansible_host: 84.201.164.114
       ansible_private_key_file: ~/.ssh/id_ed25519
 
 vector:
@@ -12,13 +12,13 @@ vector:
     vector-01:
       ansible_connection: ssh
       ansible_ssh_user: admin
-      ansible_host: 51.250.109.64
+      ansible_host: 51.250.108.82
       ansible_private_key_file: ~/.ssh/id_ed25519
 
 lighthouse:
   hosts:
     lighthouse-01:
       ansible_connection: ssh
-      ansible_host: <PASTE_IP_HERE>
+      ansible_host: 51.250.23.113
       ansible_user: admin
       ansible_private_key_file: ~/.ssh/id_ed25519
