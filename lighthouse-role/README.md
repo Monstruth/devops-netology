@@ -1,15 +1,14 @@
-Vector
+LightHouse
 =========
 
-This role can install Vector on EL
+This role can install LightHouse on EL
 
 Role Variables
 --------------
 
-| vars           | description                              |
-|----------------|------------------------------------------|
-| vector_version | Version of Vector to install             |
-|vector_architecture| Version computer architecture for install|
+| vars           | description                               |
+|----------------|-------------------------------------------|
+| nginx_version | Version of Nginx to install               |
 
 
 Example Playbook
@@ -19,7 +18,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - { role: vector-role }
+         - { role: lighthouse-role }
 
 License
 -------

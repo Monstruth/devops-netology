@@ -1,6 +1,6 @@
 galaxy_info:
   author: Alexey Perepelitsyn
-  description: This role install vector on EL
+  description: This role install Lighthouse on EL
   company: netology
 
   # If the issue tracker for your role is not on github, uncomment the
