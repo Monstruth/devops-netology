@@ -1,2 +1,6 @@
 ---
-# handlers file for lighthouse-role
+- name: Start Vector service
+  become: true
+  ansible.builtin.service:
+    name: vector
+    state: started
