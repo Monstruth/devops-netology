@@ -37,6 +37,12 @@
 10. Выложите playbook в репозиторий.
 11. В ответе дайте ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook.
 
+[vector-role](https://github.com/perepelitsyn-alexei/devops-netology/tree/0.0.1/vector-role)
+
+[lighthouse-role](https://github.com/perepelitsyn-alexei/devops-netology/tree/0.0.1/lighthouse-role)
+
+[playbook](https://github.com/perepelitsyn-alexei/devops-netology/tree/main/08-ansible-04-role/playbook)
+
 ---
 
 ### Как оформить решение задания
