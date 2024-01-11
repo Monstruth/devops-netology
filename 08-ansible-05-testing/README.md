@@ -16,7 +16,13 @@
 
 
 2. Перейдите в каталог с ролью vector-role и создайте сценарий тестирования по умолчанию при помощи `molecule init scenario --driver-name docker`.
+
+![02](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/66b275be-085c-4821-8db7-eeff7dc4797a)
+
 3. Добавьте несколько разных дистрибутивов (centos:8, ubuntu:latest) для инстансов и протестируйте роль, исправьте найденные ошибки, если они есть.
+
+![03](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/820b85a8-5c4a-426d-a637-5d8209240616)
+
 4. Добавьте несколько assert в verify.yml-файл для  проверки работоспособности vector-role (проверка, что конфиг валидный, проверка успешности запуска и др.). 
 ```
 ---
@@ -60,6 +66,9 @@
 5. Создайте облегчённый сценарий для `molecule` с драйвером `molecule_podman`. Проверьте его на исполнимость.
 6. Пропишите правильную команду в `tox.ini`, чтобы запускался облегчённый сценарий.
 8. Запустите команду `tox`. Убедитесь, что всё отработало успешно.
+
+![tox](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/8367a228-0f41-4c8e-9dd9-745a1745d4e2)
+
 9. Добавьте новый тег на коммит с рабочим сценарием в соответствии с семантическим версионированием.
 
 [tag 0.0.3](https://github.com/perepelitsyn-alexei/devops-netology/blob/0.0.3/08-ansible-05-testing/roles/vector-role/molecule/podman/molecule.yml)
