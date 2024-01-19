@@ -42,6 +42,8 @@
 
 ![all](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/988fe1f3-e603-409c-b4f6-a71d20bcc142)
 
+![workflow](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/606592eb-df9d-45b8-a43b-67f21ca99b78)
+
 ### Как оформить решение задания
 
 Выполненное домашнее задание пришлите в виде ссылки на .md-файл в вашем репозитории.
