@@ -40,6 +40,7 @@
 
 ![bug](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/4344791c-c15d-4cf1-bc33-9fab918a56f7)
 
+![all](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/988fe1f3-e603-409c-b4f6-a71d20bcc142)
 
 ### Как оформить решение задания
 
