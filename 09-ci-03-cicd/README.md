@@ -19,11 +19,16 @@
 2. Скачайте пакет sonar-scanner, который вам предлагает скачать SonarQube.
 3. Сделайте так, чтобы binary был доступен через вызов в shell (или поменяйте переменную PATH, или любой другой, удобный вам способ).
 4. Проверьте `sonar-scanner --version`.
+
+![sonar version](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/f4ffea04-b5c2-4bcb-bcee-ea9ede5f85b3)
+
 5. Запустите анализатор против кода из директории [example](./example) с дополнительным ключом `-Dsonar.coverage.exclusions=fail.py`.
 6. Посмотрите результат в интерфейсе.
 7. Исправьте ошибки, которые он выявил, включая warnings.
 8. Запустите анализатор повторно — проверьте, что QG пройдены успешно.
 9. Сделайте скриншот успешного прохождения анализа, приложите к решению ДЗ.
+
+![sonar](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/2d8f5413-29a4-436e-9759-dfe038598e95)
 
 ## Знакомство с Nexus
 
@@ -39,7 +44,26 @@
    
 2. В него же загрузите такой же артефакт, но с version: 8_102.
 3. Проверьте, что все файлы загрузились успешно.
+
+![nexus](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/0815d050-68f7-440c-8999-bcfe2ab5ea4b)
+
 4. В ответе пришлите файл `maven-metadata.xml` для этого артефекта.
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>netology</groupId>
+  <artifactId>java</artifactId>
+  <versioning>
+    <latest>8_282</latest>
+    <release>8_282</release>
+    <versions>
+      <version>8_102</version>
+      <version>8_282</version>
+    </versions>
+    <lastUpdated>20240123220709</lastUpdated>
+  </versioning>
+</metadata>
+```
 
 ### Знакомство с Maven
 
@@ -49,6 +73,9 @@
 2. Разархивируйте, сделайте так, чтобы binary был доступен через вызов в shell (или поменяйте переменную PATH, или любой другой, удобный вам способ).
 3. Удалите из `apache-maven-<version>/conf/settings.xml` упоминание о правиле, отвергающем HTTP- соединение — раздел mirrors —> id: my-repository-http-unblocker.
 4. Проверьте `mvn --version`.
+
+![mvn version](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/05590932-97c3-4fa6-92ee-fa9d44211421)
+
 5. Заберите директорию [mvn](./mvn) с pom.
 
 ### Основная часть
@@ -57,6 +84,33 @@
 2. Запустите команду `mvn package` в директории с `pom.xml`, ожидайте успешного окончания.
 3. Проверьте директорию `~/.m2/repository/`, найдите ваш артефакт.
 4. В ответе пришлите исправленный файл `pom.xml`.
+
+```
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.netology.app</groupId>
+  <artifactId>simple-app</artifactId>
+  <version>1.0-SNAPSHOT</version>
+   <repositories>
+    <repository>
+      <id>my-repo</id>
+      <name>maven-public</name>
+      <url>http://158.160.30.60:8081/repository/maven-public/</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>netology</groupId>
+      <artifactId>java</artifactId>
+      <version>8_282</version>
+      <classifier>distrib</classifier>
+      <type>tar.gz</type>
+    </dependency>
+  </dependencies>
+</project>
+```
 
 ---
 
