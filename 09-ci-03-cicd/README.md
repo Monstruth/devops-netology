@@ -48,7 +48,7 @@
 ![nexus](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/0815d050-68f7-440c-8999-bcfe2ab5ea4b)
 
 4. В ответе пришлите файл `maven-metadata.xml` для этого артефекта.
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata modelVersion="1.1.0">
   <groupId>netology</groupId>
