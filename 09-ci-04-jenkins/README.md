@@ -12,6 +12,9 @@
 ## Основная часть
 
 1. Сделать Freestyle Job, который будет запускать `molecule test` из любого вашего репозитория с ролью.
+
+![2024-02-04_00-51-01](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/7eec993c-6a2b-4aa1-809c-583bd31ac0de)
+
 2. Сделать Declarative Pipeline Job, который будет запускать `molecule test` из любого вашего репозитория с ролью.
 3. Перенести Declarative Pipeline в репозиторий в файл `Jenkinsfile`.
 4. Создать Multibranch Pipeline на запуск `Jenkinsfile` из репозитория.
