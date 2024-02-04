@@ -16,6 +16,11 @@
 ![2024-02-04_00-51-01](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/7eec993c-6a2b-4aa1-809c-583bd31ac0de)
 
 2. Сделать Declarative Pipeline Job, который будет запускать `molecule test` из любого вашего репозитория с ролью.
+
+![2024-02-04_03-42-55](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/52aa9432-87e5-4112-b38b-3d3c82405e10)
+
+![2024-02-04_03-43-59](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/47fe176c-314d-4b98-a743-dccfc15b35f4)
+
 3. Перенести Declarative Pipeline в репозиторий в файл `Jenkinsfile`.
 4. Создать Multibranch Pipeline на запуск `Jenkinsfile` из репозитория.
 5. Создать Scripted Pipeline, наполнить его скриптом из [pipeline](./pipeline).
