@@ -1,17 +1,18 @@
-node("linux"){
-    stage("Git checkout"){
-        git credentialsId: '5ac0095d-0185-431b-94da-09a0ad9b0e2c', url: 'git@github.com:aragastmatb/example-playbook.git'
+pipeline {
+    agent {
+        label 'linux'
     }
-    stage("Sample define secret_check"){
-        secret_check=true
-    }
-    stage("Run playbook"){
-        if (secret_check){
-            sh 'ansible-playbook site.yml -i inventory/prod.yml'
+    stages {
+        stage('Git checkout') {
+            steps {
+                git branch: 'main', credentialsId: '70aa877d-05d0-46e9-b370-2e502e75c01f', url: 'git@github.com:perepelitsyn-alexei/clickhouse.git'
+            }
         }
-        else{
-            echo 'need more action'
+        stage ('Run molecule') {
+            steps {
+                sh 'molecule test'
+                cleanWs()
+            }
         }
-        
     }
 }
