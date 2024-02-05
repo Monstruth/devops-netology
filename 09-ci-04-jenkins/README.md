@@ -39,6 +39,9 @@
 ![06](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/ad2d2ee3-591d-406f-97ac-f3e0706a5061)
 
 5. Создать Scripted Pipeline, наполнить его скриптом из [pipeline](./pipeline).
+
+![2024-02-05_16-02-35](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/c2a29020-ca94-4ef9-a68d-e55fbac152a7)
+
 6. Внести необходимые изменения, чтобы Pipeline запускал `ansible-playbook` без флагов `--check --diff`, если не установлен параметр при запуске джобы (prod_run = True). По умолчанию параметр имеет значение False и запускает прогон с флагами `--check --diff`.
 7. Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозиторий в файл `ScriptedJenkinsfile`.
 8. Отправить ссылку на репозиторий с ролью и Declarative Pipeline и Scripted Pipeline.
