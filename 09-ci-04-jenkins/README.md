@@ -22,7 +22,7 @@
 
 ![2024-02-04_03-42-55](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/52aa9432-87e5-4112-b38b-3d3c82405e10)
 
-![2024-02-04_03-43-59](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/47fe176c-314d-4b98-a743-dccfc15b35f4)
+![03](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/3335ed94-8a44-45ff-9428-fc369050deb6)
 
 3. Перенести Declarative Pipeline в репозиторий в файл `Jenkinsfile`.
 4. Создать Multibranch Pipeline на запуск `Jenkinsfile` из репозитория.
