@@ -55,6 +55,8 @@
 
 [Jenkinsfile](https://github.com/perepelitsyn-alexei/devops-netology/blob/main/09-ci-04-jenkins/pipeline/Jenkinsfile)
 
+[ScriptedJenkinsfile](https://github.com/perepelitsyn-alexei/devops-netology/blob/main/09-ci-04-jenkins/pipeline/ScriptedJenkinsfile)
+
 9. Сопроводите процесс настройки скриншотами для каждого пункта задания!!
 
 ## Необязательная часть
