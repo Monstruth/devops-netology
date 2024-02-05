@@ -50,6 +50,7 @@
 
 7. Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозиторий в файл `ScriptedJenkinsfile`.
 8. Отправить ссылку на репозиторий с ролью и Declarative Pipeline и Scripted Pipeline.
+
 [Репозиторий с ролью](https://github.com/perepelitsyn-alexei/clickhouse.git)
 
 
