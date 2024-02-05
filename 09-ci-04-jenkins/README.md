@@ -53,6 +53,7 @@
 
 [Репозиторий с ролью](https://github.com/perepelitsyn-alexei/clickhouse.git)
 
+[Jenkinsfile](https://github.com/perepelitsyn-alexei/devops-netology/blob/main/09-ci-04-jenkins/pipeline/Jenkinsfile)
 
 9. Сопроводите процесс настройки скриншотами для каждого пункта задания!!
 
