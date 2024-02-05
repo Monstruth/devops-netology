@@ -25,6 +25,11 @@
 ![03](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/3335ed94-8a44-45ff-9428-fc369050deb6)
 
 3. Перенести Declarative Pipeline в репозиторий в файл `Jenkinsfile`.
+
+![2024-02-05_15-29-58](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/c2560235-87ae-4afb-928e-d333f388638c)
+
+![04](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/b393353d-0c10-464e-b2f1-86ff9e92a312)
+
 4. Создать Multibranch Pipeline на запуск `Jenkinsfile` из репозитория.
 5. Создать Scripted Pipeline, наполнить его скриптом из [pipeline](./pipeline).
 6. Внести необходимые изменения, чтобы Pipeline запускал `ansible-playbook` без флагов `--check --diff`, если не установлен параметр при запуске джобы (prod_run = True). По умолчанию параметр имеет значение False и запускает прогон с флагами `--check --diff`.
