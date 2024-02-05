@@ -15,6 +15,9 @@
 
 ![2024-02-04_00-51-01](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/7eec993c-6a2b-4aa1-809c-583bd31ac0de)
 
+![02](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/3e7a41e8-16a1-4f67-8943-38005ca80521)
+
+
 2. Сделать Declarative Pipeline Job, который будет запускать `molecule test` из любого вашего репозитория с ролью.
 
 ![2024-02-04_03-42-55](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/52aa9432-87e5-4112-b38b-3d3c82405e10)
