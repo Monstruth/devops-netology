@@ -45,8 +45,8 @@
     - Prometheus - изначально сделан как pull, но можно установить специальный экспортер pushgateway
     - TICK - для сбора метрик используется агент Telegraf это push модель
     - Zabbix - push модель
-    - VictoriaMetrics
-    - Nagios
+    - VictoriaMetrics позиционируется как замена Prometheus то есть pull модель, но как и в случае с Прометеем имеет собственный vmagent для push операций
+    - Nagios это push
 #
 7. Склонируйте себе [репозиторий](https://github.com/influxdata/sandbox/tree/master) и запустите TICK-стэк, 
 используя технологии docker и docker-compose.
