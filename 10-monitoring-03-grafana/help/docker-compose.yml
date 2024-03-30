@@ -2,7 +2,8 @@ version: '3.8'
 
 services:
   prometheus:
-    image: prom/prometheus:v2.24.1
+    image: prom/prometheus:latest
+    user: root
     container_name: prometheus
     volumes:
       - ./prometheus:/etc/prometheus:Z
@@ -18,11 +19,13 @@ services:
       - nodeexporter
     expose:
       - 9090
+
     networks:
       - monitor-net
 
   nodeexporter:
     image: prom/node-exporter:v1.0.1
+    user: root
     container_name: nodeexporter
     volumes:
       - /proc:/host/proc:ro
