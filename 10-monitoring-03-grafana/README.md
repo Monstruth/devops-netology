@@ -22,9 +22,26 @@
 Создайте Dashboard и в ней создайте Panels:
 
 - утилизация CPU для nodeexporter (в процентах, 100-idle);
+
+```100 - avg(irate(node_cpu_seconds_total{job="nodeexporter", mode="idle"}[1m])) * 100```
+
 - CPULA 1/5/15;
+
+```
+avg(node_load1{job="nodeexporter"})
+avg(node_load5{job="nodeexporter"})
+avg(node_load15{job="nodeexporter"})
+```
+
 - количество свободной оперативной памяти;
+
+```node_memory_MemFree_bytes```
+
 - количество места на файловой системе.
+
+```
+node_filesystem_free_bytes{fstype=~"ext4|xfs"} / node_filesystem_size_bytes{fstype=~"ext4|xfs"} * 100
+```
 
 Для решения этого задания приведите promql-запросы для выдачи этих метрик, а также скриншот получившейся Dashboard.
 
