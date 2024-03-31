@@ -57,6 +57,10 @@ node_filesystem_free_bytes{fstype=~"ext4|xfs"} / node_filesystem_size_bytes{fsty
 
 ![04](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/f6057d7c-de7a-463f-98d6-1b09782c9e5e)
 
+![05](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/f1ba7289-542d-4b20-968d-4f015809ab9e)
+
+![06](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/c3a1a8c8-5ba6-4958-8be5-cb27e49292b9)
+
 
 ## Задание 4
 
