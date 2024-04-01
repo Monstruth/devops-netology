@@ -40,7 +40,15 @@ Filebeat следует сконфигурировать для отправки
 Результатом выполнения задания должны быть:
 
 - скриншот `docker ps` через 5 минут после старта всех контейнеров (их должно быть 5);
+
+![01](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/c3db6d6a-ee96-4512-868b-90e7cead3eab)
+
 - скриншот интерфейса kibana;
+
+![02](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/8fd69779-400d-4446-ba0e-aa82fd8febf5)
+
+![03](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/f1f85fc1-d846-4155-b43b-867341524aad)
+
 - docker-compose манифест (если вы не использовали директорию help);
 - ваши yml-конфигурации для стека (если вы не использовали директорию help).
 
