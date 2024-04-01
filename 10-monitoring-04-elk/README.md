@@ -47,8 +47,6 @@ Filebeat следует сконфигурировать для отправки
 
 ![02](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/8fd69779-400d-4446-ba0e-aa82fd8febf5)
 
-![03](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/f1f85fc1-d846-4155-b43b-867341524aad)
-
 - docker-compose манифест (если вы не использовали директорию help);
 - ваши yml-конфигурации для стека (если вы не использовали директорию help).
 
@@ -60,6 +58,8 @@ Filebeat следует сконфигурировать для отправки
 
 В манифесте директории help также приведенно dummy-приложение, которое генерирует рандомные события в stdout-контейнера.
 Эти логи должны порождать индекс logstash-* в elasticsearch. Если этого индекса нет — воспользуйтесь советами и источниками из раздела «Дополнительные ссылки» этого задания.
+
+![03](https://github.com/perepelitsyn-alexei/devops-netology/assets/105611781/f1f85fc1-d846-4155-b43b-867341524aad)
  
 ---
 
