@@ -58,7 +58,7 @@ KrakenD —  это open source решение, написанное на Go. Н
 | Продукт | Кластеризация | Хранение сообщений на диске | Скорость работы | Форматы сообщений | Разделение прав доступа на потоки | Простота эксплуатации |
 |---|---|---|---|---|---|---|
 | Apache Kafka | Да | Да | ~605 MB/s | Binary через TCP Socket | Да | Сложно |
-| NATS | Да | Да | ? | NATS Streaming Protocol | Да | Просто |
+| NATS | Да | Да | ~100 MB/s | NATS Streaming Protocol | Да | Просто |
 | Apache PULSAR | Да | Да | ~305 MB/s | Binary через TCP Socket | Да | Сложно |
 | RabbitMQ | Да | Да | ~40 MB/s | AMQP, MQTT, STOMP | Да | Просто |
 
