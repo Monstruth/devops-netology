@@ -33,3 +33,32 @@ spec:
         - containerPort: 11443
           name: mtool-https
 
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-test
+spec:
+  selector:
+    app: nginx
+  ports:
+  - name: service-nginx-http
+    protocol: TCP
+    port: 80
+    targetPort: nginx-http
+  - name: service-multitool-http
+    protocol: TCP
+    port: 1180
+    targetPort: mtool-http
+  - name: service-multitool-https
+    protocol: TCP
+    port: 11443
+    targetPort: mtool-https
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multitool-test-pod
+spec:
+  containers:
+  - name: multitool-test-pod
+    image: wbitt/network-multitool
