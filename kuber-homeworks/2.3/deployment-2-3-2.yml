@@ -1,0 +1,172 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: secret-tls
+  namespace: default
+data:
+  tls.crt: |
+    MIIFCzCCAvOgAwIBAgIUEpAnAA0mu/J5qutvYitUoF/s5IUwDQYJKoZIhvcNAQEL
+    BQAwFTETMBEGA1UEAwwKbXktYXBwLmNvbTAeFw0yNDA4MDUwMTI2MjFaFw0yNTA4
+    MDUwMTI2MjFaMBUxEzARBgNVBAMMCm15LWFwcC5jb20wggIiMA0GCSqGSIb3DQEB
+    AQUAA4ICDwAwggIKAoICAQDYlKzCcYjGis5z45piB1JUEtQTxErAqGMkb9yt7k+z
+    9L1AKv63Kc+h+SyyTgH2qzqBvkFP2d2Ucr12a+Aja9e0vwRzaDRvINoq8+keatwS
+    IFk3eLQ7lSAr+RvdElcwJfQbKHxhyL5IhOPNtd4vxyK4QUqynFaono9UaJuFyfnM
+    UHRfnS76+WkAJkjhudZ5SIVhSjoM33jTIX8JN2CLQixxmDRRcARYnRdhZ4DRXlCv
+    gsm9fjejmuvanQhfeqlba3Z0V0HOYlREL6i3529+rNUKy74c42/A5LL/wAnfQKby
+    pXMJxaZ1oqcjPJieTR2c8rmZgeRr5Okzo6cDod4kyQOapdo3YJ5wUzv35o50mP+0
+    rVGrsaxtcAhaQwkxlTSyXDma3/HQTxzd696zx3xklEbJAwOm5dvtMJpBv6NtapzL
+    KqSqdQH0ErYIEw0Rs7moFrchhkvgyw2jjF/m2AjJJ8HVVsVSproCaQwZzByI7zzp
+    FtXkXl1SGVbAye/Ip/OVpR2FbzZxSWu78AJI8GqX5SQV0ReuKLyAdbPJyZJZEaXp
+    OKCdnYn7k+NDX7e7FGXwMr+wHOKgO1CrBfa1xeb7/o93jkGl327vNapuMuiqlRlO
+    Q5UAwifHlw4SwtW+2mYGF2tMmKiq1xSmWVYCRGDy9xZJA2vZhY7pleUqMyvLxpRt
+    WwIDAQABo1MwUTAdBgNVHQ4EFgQUy3Zq69K+/hIbQxRw5ukbem+lPBUwHwYDVR0j
+    BBgwFoAUy3Zq69K+/hIbQxRw5ukbem+lPBUwDwYDVR0TAQH/BAUwAwEB/zANBgkq
+    hkiG9w0BAQsFAAOCAgEAxPj1A3o/p2mJRR8dJVJenH6SZ8CAiew4JXzHn5i2VfMV
+    QuxxWCDWWSXfvt/tPtT6q5kN4xgnNqRKix6ANzhx7GVcwsw9QPmjfkQYnyM4LL84
+    hZSqgGHAmkV7IWxPvs+iif7NdQiEkDMRWd4Csj5sY5dzT9IKazzNu5qRX20cGUu6
+    NEEEGdrAwu8XiNsGebGhkDBCvaXbxs5taEqePGvSzfi7+9WaQa3ljrlJxjYJBrTC
+    KBrM3dfk3jDutkX53AC+Khh4uGiyXfjfv+4guNtLnjUJx6VYl1gaq+fiYptuGAH1
+    vIU1zfKT67683mct5VE5bI2aYANFVJGgR3sNZ2I3NYababnLEQdq7tc56SdayLRr
+    VGnkT6bM9+EflyExD6FgDsWcVRZuck3ZpTuJbSdA5Du8cWjV5cXZw6MKVoMEwl36
+    1xvoR/n84Zfn3K4TPf4QmhyA+ErGr9YGU4PXI+4cjzdZzOUT6FNgMXDkv0C49e84
+    QmayOP/lzif8fi2z8C3PgevMeikUd3OyyNMistb4cJIXGHP24taSAx7DX4JHooCO
+    kVViza+VTacP8gNXok6UNlLkvuyj37JrX8SnSAQjd72KirjBexutE9fC75vPWJo+
+    R9+vaGdz2CthUWgxLSAsUFFYBUWyYr7khb3q7WDxVPUl1cSK52eDCl7Pd6v8nrw=
+  tls.key: |
+    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
+    O/ZMTJOFf8lq+qdCFoBpr6Lj4+5ckXQ=
+type: kubernetes.io/tls
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-configmap2
+data:
+   index.html: |
+    <!doctype html>
+    <html lang="en">
+    <head>
+    <title>HTML Document Template</title>
+    </head>
+    <body>
+    <p>HTTPS-ingress.</p>
+    <script>
+    console.log(document.querySelector('p').textContent);
+    </script>
+    </body>
+    </html>
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment2
+  labels:
+    app: nginx2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx2
+  template:
+    metadata:
+      labels:
+        app: nginx2
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+          name: nginx-http
+        volumeMounts:
+        - name: nginx-configmap-vol
+          mountPath: /usr/share/nginx/html
+      volumes:
+      - name: nginx-configmap-vol
+        configMap:
+          name: nginx-configmap2
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-serv
+spec:
+  selector:
+    app: nginx2
+  ports:
+  - name: svc-nginx-http2
+    protocol: TCP
+    port: 80
+    targetPort: nginx-http
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: http-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+spec:
+  tls:
+  - hosts:
+      - test.com
+    secretName: secret-tls
+  rules:
+  - host: test.com
+    http:
+      paths:
+        - pathType: Prefix
+          path: /
+          backend:
+            service:
+             name: nginx-serv
+             port:
+               number: 80
